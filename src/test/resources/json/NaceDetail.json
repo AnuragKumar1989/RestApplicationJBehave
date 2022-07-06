@@ -1,0 +1,12 @@
+{
+  "orderNumber": 332,
+  "level":1,
+  "code":"A",
+  "parent": null,
+  "description": "some description",
+  "itemInclude": "any item",
+  "additionalItemInclude": "additional",
+  "rulings": null,
+  "itemExclude": "excluded item",
+  "referenceToIsic" : "C"
+}
