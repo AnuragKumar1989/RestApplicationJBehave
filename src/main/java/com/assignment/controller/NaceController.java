@@ -32,6 +32,6 @@ public class NaceController {
     @PostMapping(value = "/nace", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> putNaceDetails(@RequestBody NaceDetail naceDetail) {
         naceService.putDetails(naceDetail);
-        return new ResponseEntity<>("Saved successfully", HttpStatus.ACCEPTED);
+        return new ResponseEntity<>("Saved successfully", HttpStatus.CREATED);
     }
 }

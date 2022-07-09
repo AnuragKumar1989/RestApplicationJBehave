@@ -69,6 +69,6 @@ public class NaceControllerTest {
         NaceDetail naceDetail = objectMapper.readValue(json, NaceDetail.class);
         mockMvc.perform(MockMvcRequestBuilders.post(new URI("/api/nace")).contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(naceDetail)))
-                .andExpect(MockMvcResultMatchers.status().is(HttpStatus.ACCEPTED.value()));
+                .andExpect(MockMvcResultMatchers.status().is(HttpStatus.CREATED.value()));
     }
 }
